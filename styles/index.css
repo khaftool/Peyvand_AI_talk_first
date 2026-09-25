@@ -1,0 +1,192 @@
+/* Beyond the Prompt · theme
+   Canvas is 1920 × 1080, so every px value below is a projector pixel. */
+
+:root {
+  --cream: #F5EFE4;
+  --ink: #141210;
+  --orange: #F26B28;
+  --grey: #6B665F;
+  --paper: #FFFFFF;
+  --dot: #B9B2A6;
+
+  --f-head: 'Archivo', 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+  --f-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --pad-x: 120px;
+  --pad-top: 104px;
+  --pad-bottom: 72px;
+  --strip-h: 36px;
+}
+
+/* ---------- base ---------- */
+
+.slidev-layout {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.slidev-layout *,
+.slidev-layout *::before,
+.slidev-layout *::after {
+  box-sizing: border-box;
+}
+
+.slidev-layout p { margin: 0 0 0.6em; }
+.slidev-layout strong, .slidev-layout b { font-weight: 600; }
+.slidev-layout a { color: inherit; text-decoration: none; }
+
+/* ---------- type ---------- */
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout .headline {
+  font-family: var(--f-head);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+  margin: 0 0 32px;
+  color: var(--ink);
+}
+
+.slidev-layout h1 { font-size: 96px; }
+.slidev-layout h1.xl { font-size: 150px; }
+.slidev-layout h1.l { font-size: 112px; }
+.slidev-layout h1.m { font-size: 80px; }
+.slidev-layout h1 .o,
+.slidev-layout h2 .o,
+.slidev-layout .o { color: var(--orange); }
+
+.sub {
+  color: var(--grey);
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.grey { color: var(--grey); }
+.mono { font-family: var(--f-mono); }
+.small-grey { color: var(--grey); font-size: 28px; }
+
+.log {
+  font-family: var(--f-mono);
+  font-size: 30px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+.log .o { color: var(--orange); }
+
+.slidev-layout code {
+  font-family: var(--f-mono);
+  font-size: 0.86em;
+  font-weight: 700;
+  background: none;
+  padding: 0;
+  color: var(--ink);
+}
+
+/* ---------- tags ---------- */
+
+.tag {
+  display: inline-block;
+  font-family: var(--f-mono);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 9px 14px 8px;
+  margin-bottom: 28px;
+  white-space: nowrap;
+}
+.tag.ink { background: var(--ink); color: var(--cream); }
+.tag.orange { background: var(--orange); color: var(--ink); }
+
+/* ---------- bordered boxes ---------- */
+
+.box {
+  position: relative;
+  border: 2px solid var(--ink);
+  padding: 26px 30px 28px;
+  background: transparent;
+}
+.box.paper { background: var(--paper); }
+.box.accent { border-color: var(--orange); }
+.box.invisible { border: 2px dashed var(--grey); }
+
+.label {
+  display: block;
+  font-family: var(--f-mono);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.label.o { color: var(--orange); }
+.label.g { color: var(--grey); }
+
+/* ---------- strikethrough ---------- */
+
+.strike {
+  text-decoration: line-through;
+  text-decoration-color: var(--orange);
+  text-decoration-thickness: 5px;
+}
+
+/* ---------- ordered steps (your-turn slides) ---------- */
+
+.steps ol {
+  list-style: none;
+  counter-reset: step;
+  margin: 0;
+  padding: 0;
+}
+.steps ol > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 52px;
+  margin-bottom: 20px;
+  font-size: 27px;
+  line-height: 1.38;
+}
+.steps ol > li::before {
+  content: counter(step) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--f-mono);
+  font-weight: 700;
+  color: var(--orange);
+}
+.steps li p { margin: 0; }
+
+/* ---------- utilities ---------- */
+
+.row { display: flex; gap: 32px; }
+.col { display: flex; flex-direction: column; }
+.grow { flex: 1; }
+.mt-s { margin-top: 16px; }
+.mt-m { margin-top: 32px; }
+.mt-l { margin-top: 56px; }
+.center-y { display: flex; flex-direction: column; justify-content: center; }
+
+/* ---------- Slidev click states: no decorative motion ---------- */
+
+.slidev-vclick-target { transition: opacity 180ms linear; }
+.slidev-vclick-hidden { opacity: 0 !important; pointer-events: none; }
+
+/* stacked swap: two elements occupying the same spot, one replacing the other */
+.swap { display: grid; }
+.swap > * { grid-area: 1 / 1; }
