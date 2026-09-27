@@ -8,17 +8,15 @@ withDefaults(defineProps<{
   headline?: string
   story?: string
   predict?: string
-  minutes?: number
 }>(), {
   crumbs: () => [],
   active: -1,
   menu: false,
   menuTo: 'menu',
-  tag: '▶ YOUR TURN · 3 MIN',
+  tag: '▶ YOUR TURN',
   headline: '',
   story: '',
   predict: '',
-  minutes: 3,
 })
 </script>
 

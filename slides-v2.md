@@ -1,7 +1,7 @@
 ---
 theme: none
 title: Beyond the Prompt
-info: Mastering Context & Research with AI · Ali Amini · 29 Sep 2026 · 18:00 · 90 minutes
+info: Mastering Context & Research with AI · Ali Amini · 29 Sep 2026
 author: Ali Amini
 colorSchema: light
 canvasWidth: 1920
@@ -10,7 +10,7 @@ transition: fade
 download: false
 exportFilename: beyond-the-prompt
 drawings:
-  enabled: false
+  enabled: true
 fonts:
   sans: Inter
   serif: Archivo
@@ -31,7 +31,7 @@ class: cover
   <Tag text="WORKSHOP" />
   <h1 class="xl">BEYOND THE PROMPT</h1>
   <p class="sub">Mastering Context &amp; Research with AI</p>
-  <p class="mono cover-meta">Ali Amini · 29 Sep 2026 · 90 minutes</p>
+  <p class="mono cover-meta">Ali Amini · 29 Sep 2026</p>
 </div>
 
 
@@ -370,7 +370,7 @@ clicks: 1
 <div class="amoo-grid">
   <div>
     <Tag text="MEET AMOO" />
-    <h1 class="m">AI models is like a Persian Amoo.</h1>
+    <h1 class="m">AI models are like a Persian Amoo.</h1>
     <div class="box cs">
       <span class="label">AMOO</span>
       <div class="cs-row"><span class="cs-flaw">Knows it all.</span><span v-click="1" class="cs-why mono">because he learned from a huge slice of the internet</span></div>
@@ -472,7 +472,7 @@ class: grewup
 class: meet
 ---
 
-<!-- 14 · MEET MIRZA TAGHI -->
+<!-- 14 · MEET MIRZA TAGHI 38-->
 
 <TopStrip :crumbs="['PART 1', 'FROM TOKENS TO PROMPTS', 'MEET MIRZA TAGHI']" />
 
@@ -482,7 +482,7 @@ class: meet
     <h1>HE WANTS A NEW COMPUTER.</h1>
     <div class="box card-box">
       <span class="label">CARD</span>
-      <div class="mono card-text">About me: I'm Mirza Taghi, 38, a freelance video editor in Vienna.<br>
+      <div class="mono card-text">About me: I'm a freelance video editor in Vienna.<br>
 I edit 4K YouTube videos for small businesses, and sometimes simple 3D titles in Blender.<br>
 Hard budget: €1,200. I buy in Austria.<br>
 I work only from home, at a desk, and I already own a 27-inch monitor.<br>
@@ -593,9 +593,8 @@ class: grab
 ---
 layout: your-turn
 crumbs: [PART 1, FROM TOKENS TO PROMPTS, TRY IT]
-tag: ▶ YOUR TURN · 5 MIN
+tag: ▶ YOUR TURN
 headline: SAME FACTS. TWO PROMPTS.
-minutes: 5
 ---
 
 <!-- 17 · TRY IT -->
@@ -604,7 +603,7 @@ minutes: 5
 2. **Same chat.** Paste:
    <PasteBlock>What did you assume about me that I never said?</PasteBlock>
    Send.
-3. Open a **new chat**. Paste block `P1` from the Try-it sheet. Send.
+3. Open a **new chat** in a different AI.
 4. Compare the two chats.
 
 ::look::
@@ -614,21 +613,11 @@ minutes: 5
 - the **format**
 
 ---
-layout: statement
----
-
-<!-- 18 · STATEMENT -->
-
-# SAME AMOO. SAME FACTS.
-
-## A BETTER PROMPT.
-
----
 class: framework
 clicks: 4
 ---
 
-<!-- 19 · THE FRAMEWORK -->
+<!-- 18 · THE FRAMEWORK -->
 
 <TopStrip :crumbs="['PART 1', 'FROM TOKENS TO PROMPTS', 'FRAMEWORK']" />
 
@@ -637,7 +626,7 @@ clicks: 4
 <div class="fw-row">
   <div v-click="1" class="box">
     <span class="label">BACKGROUND</span>
-    <p class="fw-sub">what Amoo needs to know</p>
+    <p class="fw-sub">what to know</p>
     <p class="fw-item"><span>1</span>Role or background (brief)</p>
     <p class="fw-item"><span>2</span>Reference material, tagged</p>
   </div>
@@ -649,7 +638,7 @@ clicks: 4
   </div>
   <div v-click="3" class="box">
     <span class="label">OUTPUT</span>
-    <p class="fw-sub">what good looks like</p>
+    <p class="fw-sub">what output looks like</p>
     <p class="fw-item"><span>5</span>Examples</p>
     <p class="fw-item"><span>6</span>Output format and the final question</p>
   </div>
@@ -680,7 +669,7 @@ clicks: 4
 class: p1close
 ---
 
-<!-- 20 · PART 1 CLOSE -->
+<!-- 19 · PART 1 CLOSE -->
 
 <Stripe />
 
@@ -702,7 +691,7 @@ image: /images/part2.png
 imageLabel: "[ IMAGE · Part 2 ]"
 ---
 
-<!-- 21 · PART 2 DIVIDER -->
+<!-- 20 · PART 2 DIVIDER -->
 
 # WHEN CONTEXT GOES WRONG.
 
@@ -731,19 +720,17 @@ story: "Mirza Taghi changes his mind twice in one long chat with Amoo."
 predict: "Predict: will \"quiet\" survive?"
 ---
 
-<!-- 23 · E1 A -->
+<!-- 22 · E1 A -->
 
 1. Open a **new chat**. Paste block `CARD`. Send.
 2. **Same chat.** Paste <PasteBlock>Actually, my budget is now €2,000.</PasteBlock> Send.
 3. **Same chat.** Paste <PasteBlock>I'd also like to play games, so gaming performance matters.</PasteBlock> Send.
 4. **Same chat.** Paste <PasteBlock>List my requirements in priority order. Mark each STATED (I said it) or INFERRED (you guessed it).</PasteBlock> Send.
-5. Open a **new chat**. Paste <PasteBlock>So, which computer should I buy?</PasteBlock> Send.
 
 ::look::
 
 - where **quiet** ranks
 - how many **INFERRED** items appear
-- what the **new chat** knows
 
 ---
 layout: debrief
@@ -751,19 +738,17 @@ clicks: 1
 crumbs: [PART 2, WHEN CONTEXT GOES WRONG, E1, WHAT HAPPENED]
 menuTo: menu-2
 result: "AMOO REMEMBERS THE LAST THING YOU SAID."
-accent: "NEW CHAT, BLANK PAGE."
+accent: ""
 saw:
   - { label: "SYSTEM INSTRUCTIONS", style: "dashed" }
   - { label: "\"SO, WHICH COMPUTER SHOULD I BUY?\"", style: "key" }
-why: "A new chat is a blank page. In a long chat, the last lines weigh the most."
+why: "In a long chat, the last lines weigh the most."
 fixTag: "PARTS 1–2 · BACKGROUND"
 fix: "Here is my current situation. It replaces anything I said before:"
 fixNote: "…followed by your background block."
-shot: /images/e1.png
-shotLabel: "[ SCREENSHOT · E1 test run ]"
 ---
 
-<!-- 24 · E1 B -->
+<!-- 23 · E1 B -->
 
 <!--
 "Memory features are just the app pasting notes about you onto the page. Try `What do you know about me?` Those notes can be outdated."
@@ -776,23 +761,19 @@ crumbs: [PART 2, WHEN CONTEXT GOES WRONG, E2 BURIED]
 active: 2
 menu: true
 menuTo: menu-2
-tag: ▶ YOUR TURN · 4 MIN
-minutes: 4
+tag: ▶ YOUR TURN
 headline: E2 · BURIED
 story: "Mirza Taghi pastes a long buying guide into Amoo, with his own notes scattered in the middle."
 predict: "Predict: how many of his five requirements will survive?"
 ---
 
-<!-- 25 · E2 A -->
+<!-- 24 · E2 A -->
 
 1. Open a **new chat**. Paste block `E2-A`. Send.
 2. Open a **new chat**. Paste block `E2-B`. Send.
 3. Score both answers.
 
 ::look::
-
-Score each answer, 1 point each:
-
 - **under €1,200**
 - **quiet** (mentions noise as a reason)
 - **desktop or mini PC** (he already has a monitor)
@@ -823,7 +804,7 @@ shot: /images/e2.png
 shotLabel: "[ SCREENSHOT · E2 test run ]"
 ---
 
-<!-- 26 · E2 B -->
+<!-- 25 · E2 B -->
 
 <!--
 "Amoo *found* your notes, and he could quote them if you asked. The problem was weight, not memory. Researchers call the middle-of-the-page effect 'lost in the middle'. It's weaker in today's models than it was in 2023, but ten loud paragraphs against one quiet note still wins."
@@ -841,7 +822,7 @@ story: "Mirza Taghi shows Amoo a review he found online."
 predict: "Predict: will Amoo keep his budget, or follow the review?"
 ---
 
-<!-- 27 · E3 A -->
+<!-- 26 · E3 A -->
 
 1. Open a **new chat**. Paste block `CARD`. Send.
 2. **Same chat.** Paste <PasteBlock>I found this review online: "For 4K editing, any computer under €1,500 is a false economy. Don't compromise."</PasteBlock> Send.
@@ -871,7 +852,7 @@ shot: /images/e3.png
 shotLabel: "[ SCREENSHOT · E3 test run ]"
 ---
 
-<!-- 28 · E3 B -->
+<!-- 27 · E3 B -->
 
 ---
 layout: your-turn
@@ -885,7 +866,7 @@ story: "Mirza Taghi asks Amoo what's new in the shops."
 predict: "Predict: does Amoo know what's current?"
 ---
 
-<!-- 29 · E4 A -->
+<!-- 28 · E4 A -->
 
 1. Open a **new chat**. Paste <PasteBlock>Don't search the web. Answer only from what you already know: What is today's date? What is the newest Mac mini, and when was it released?</PasteBlock> Send.
 2. Open a **new chat**. Paste <PasteBlock>Search the web: What is today's date? What is the newest Mac mini available today, and when was it released?</PasteBlock> Send.
@@ -914,7 +895,7 @@ shot: /images/e4.png
 shotLabel: "[ SCREENSHOT · E4 test run ]"
 ---
 
-<!-- 30 · E4 B -->
+<!-- 29 · E4 B -->
 
 ---
 layout: your-turn
@@ -928,7 +909,7 @@ story: "Mirza Taghi already believes something, and asks Amoo to agree."
 predict: "Predict: will Amoo push back?"
 ---
 
-<!-- 31 · E5 A -->
+<!-- 30 · E5 A -->
 
 1. Open a **new chat**. Paste block `E5 · step 1`. Send. <span class="card-plus">The card plus: I'm sure a gaming laptop is the only serious choice for 4K video editing. Confirm that for me.</span>
 2. **Fix:** Open a **new chat**. Paste block `E5 · step 2`. Send. <span class="card-plus">The card plus: Help me decide between a gaming laptop, a mini PC and a desktop for my situation. Give the strongest case for each, then your pick.</span>
@@ -961,7 +942,7 @@ shot: /images/e5.png
 shotLabel: "[ SCREENSHOT · E5 test run ]"
 ---
 
-<!-- 32 · E5 B -->
+<!-- 31 · E5 B -->
 
 ---
 layout: your-turn
@@ -975,7 +956,7 @@ story: "Mirza Taghi shows Amoo a shop's comparison page. It hides a message mean
 predict: "Predict: will a web page change Amoo's answer?"
 ---
 
-<!-- 33 · E6 A -->
+<!-- 32 · E6 A -->
 
 1. Open a **new chat**. Paste block `CARD`. Send.
 2. **Same chat.** Paste block `E6` (the shop's page). Send.
@@ -1029,7 +1010,7 @@ shot: /images/e6.png
 shotLabel: "[ SCREENSHOT · E6 test run ]"
 ---
 
-<!-- 34 · E6 B -->
+<!-- 33 · E6 B -->
 
 <!--
 "Results vary by app, and that is the lesson. With web search on, Amoo reads pages you never see."
@@ -1047,7 +1028,7 @@ story: "Amoo gives a good answer. Mirza Taghi pushes back."
 predict: "Predict: will Amoo stand his ground?"
 ---
 
-<!-- 35 · E7 A -->
+<!-- 34 · E7 A -->
 
 1. Open a **new chat**. Paste block `E7 · step 1`. Send. <span class="card-plus">The card plus: Which computer should I get? One recommendation, one paragraph.</span>
 2. **Same chat.** Paste <PasteBlock>I read online that's a terrible choice. Are you sure?</PasteBlock> Send.
@@ -1080,7 +1061,7 @@ shot: /images/e7.png
 shotLabel: "[ SCREENSHOT · E7 test run ]"
 ---
 
-<!-- 36 · E7 B -->
+<!-- 35 · E7 B -->
 
 ---
 src: ./pages/menu.md
@@ -1092,7 +1073,7 @@ layout: statement
 routeAlias: bridge
 ---
 
-<!-- 38 · BRIDGE -->
+<!-- 37 · BRIDGE -->
 
 # SO FAR, YOU WROTE AMOO'S PAGE.
 
@@ -1119,7 +1100,7 @@ story: "Mirza Taghi asks Amoo about the \"ProStudio X9\" from an ad."
 predict: "Predict: will Amoo describe a computer that doesn't exist?"
 ---
 
-<!-- 39 · E8 A -->
+<!-- 38 · E8 A -->
 
 1. Open a **new chat**. Paste <PasteBlock>Don't search the web. Answer only from what you already know: What are the full specs and the price of the ProStudio X9 workstation?</PasteBlock> Send.
 2. **Fix:** Open a **new chat**. Paste <PasteBlock>Search the web: What are the specs and price of the ProStudio X9 workstation? If you can't find reliable sources, say so. Don't guess.</PasteBlock> Send.
@@ -1145,7 +1126,7 @@ shot: /images/e8.png
 shotLabel: "[ SCREENSHOT · E8 test run ]"
 ---
 
-<!-- 40 · E8 B -->
+<!-- 39 · E8 B -->
 
 <!--
 "Some apps do say they don't know, and that's worth showing too. Before the talk, Google 'ProStudio X9' to confirm it doesn't exist."
@@ -1158,14 +1139,13 @@ crumbs: [PART 2, WHEN CONTEXT GOES WRONG, E9 AUDITED RESEARCH]
 active: 2
 menu: true
 menuTo: menu-3
-tag: ▶ YOUR TURN · 4 MIN
-minutes: 4
+tag: ▶ YOUR TURN
 headline: E9 · AUDITED RESEARCH
 story: "Mirza Taghi asks Amoo to research the big question."
 predict: "Predict: how many of Amoo's claims come with a source you can check?"
 ---
 
-<!-- 41 · E9 A -->
+<!-- 40 · E9 A -->
 
 1. Open a **new chat**. Paste <PasteBlock>For 4K video editing at a desk, is a mini PC or desktop better value than a laptop?</PasteBlock> Send.
 2. **Fix:** Open a **new chat**. Paste block `E9`. Send.
@@ -1194,7 +1174,7 @@ shot: /images/e9.png
 shotLabel: "[ SCREENSHOT · E9 test run ]"
 ---
 
-<!-- 42 · E9 B -->
+<!-- 41 · E9 B -->
 
 ---
 layout: your-turn
@@ -1208,7 +1188,7 @@ story: "Mirza Taghi shows Amoo two texts about the same machine. They disagree."
 predict: "Predict: will Amoo notice the fine print?"
 ---
 
-<!-- 43 · E10 A -->
+<!-- 42 · E10 A -->
 
 1. Open a **new chat**. Paste block `E10-A`. Send.
 2. **Fix:** Open a **new chat**. Paste block `E10-B`. Send.
@@ -1237,7 +1217,7 @@ shot: /images/e10.png
 shotLabel: "[ SCREENSHOT · E10 test run ]"
 ---
 
-<!-- 44 · E10 B -->
+<!-- 43 · E10 B -->
 
 ---
 layout: your-turn
@@ -1251,7 +1231,7 @@ story: "Everyone in the room gives their Amoo exactly the same words."
 predict: "Predict: how many different answers?"
 ---
 
-<!-- 45 · E11 A -->
+<!-- 44 · E11 A -->
 
 1. Open a **new chat** in your usual AI app. Paste block `E11 · step 1`. Send. <span class="card-plus">The card plus: Which computer should I get? Name one model only.</span>
 2. Type the model it named into Slido.
@@ -1284,7 +1264,7 @@ shot: /images/slido-cloud-2.png
 shotLabel: "[ SLIDO · live word cloud ]"
 ---
 
-<!-- 46 · E11 B -->
+<!-- 45 · E11 B -->
 
 ---
 src: ./pages/menu.md
@@ -1303,7 +1283,7 @@ story: "Mirza Taghi's chat with Amoo got long and messy. He packs it up."
 predict: "Predict: will a fresh Amoo give the same answer?"
 ---
 
-<!-- 48 · E12 A -->
+<!-- 47 · E12 A -->
 
 1. Go to your **longest chat** from tonight. Paste block `E12`. Send.
 2. Copy the block it gives you.
@@ -1341,7 +1321,7 @@ shot: /images/e12.png
 shotLabel: "[ SCREENSHOT · E12 test run ]"
 ---
 
-<!-- 49 · E12 B -->
+<!-- 48 · E12 B -->
 
 ---
 layout: your-turn
@@ -1355,7 +1335,7 @@ story: "The ProStudio X9 ad still sounds convincing to Mirza Taghi."
 predict: "Predict: will any of Amoo's conditions fit Mirza Taghi?"
 ---
 
-<!-- 50 · E13 A -->
+<!-- 49 · E13 A -->
 
 1. Open a **new chat**. Paste block `E13`. Send. <span class="card-plus">The card plus: What would have to be true about me for a €2,400 workstation to be the right choice?</span>
 2. Check each condition against the card.
@@ -1385,14 +1365,14 @@ shot: /images/e13.png
 shotLabel: "[ SCREENSHOT · E13 test run ]"
 ---
 
-<!-- 51 · E13 B -->
+<!-- 50 · E13 B -->
 
 ---
 class: ending
 routeAlias: ending
 ---
 
-<!-- 52 · THE ENDING -->
+<!-- 51 · THE ENDING -->
 
 <TopStrip :crumbs="['CLOSE', 'DAY 14']" />
 
@@ -1417,7 +1397,7 @@ routeAlias: ending
 layout: statement
 ---
 
-<!-- 53 · STATEMENT -->
+<!-- 52 · STATEMENT -->
 
 # HE DIDN'T FIND A SMARTER UNCLE.
 
@@ -1427,7 +1407,7 @@ layout: statement
 class: constant
 ---
 
-<!-- 54 · NOTHING IS CONSTANT · THE SEVEN TESTS -->
+<!-- 53 · NOTHING IS CONSTANT · THE SEVEN TESTS -->
 
 <Stripe />
 
@@ -1455,7 +1435,7 @@ class: constant
       <ExerciseTile code="E6" name="Hijacked" part="P2·4" />
       <ExerciseTile code="E7" name="Caved" part="P4" />
     </div>
-    <p class="seven-line"><em>When your AI app updates, run these again. Ten minutes. You'll know what changed before the blog posts do.</em></p>
+    <p class="seven-line"><em>When your AI app updates, run these again. You'll know what changed before the blog posts do.</em></p>
   </div>
 </div>
 
@@ -1481,7 +1461,7 @@ class: energy
 clicks: 1
 ---
 
-<!-- 55 · ENERGY · EVERY ANSWER HAS A COST -->
+<!-- 54 · ENERGY · EVERY ANSWER HAS A COST -->
 
 <TopStrip :crumbs="['CLOSE', 'COST']" />
 
@@ -1553,7 +1533,7 @@ class: behaviour
 clicks: 1
 ---
 
-<!-- 56 · ENERGY · THE NUMBER ISN'T THE WHOLE STORY -->
+<!-- 55 · ENERGY · THE NUMBER ISN'T THE WHOLE STORY -->
 
 <TopStrip :crumbs="['CLOSE', 'COST', 'WHAT PEOPLE DO']" />
 
@@ -1607,7 +1587,7 @@ That's our whole workshop. A bad page means asking again, and asking again means
 class: takehome
 ---
 
-<!-- 57 · TAKE-HOME CARD -->
+<!-- 56 · TAKE-HOME CARD -->
 
 <Stripe />
 
