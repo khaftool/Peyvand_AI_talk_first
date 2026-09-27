@@ -7,11 +7,13 @@ const props = withDefaults(defineProps<{
   ratio?: string        // e.g. "16/9", "3/4", "1/1"
   fit?: 'contain' | 'cover'
   caption?: boolean     // also print the label under the slot
+  screenshot?: boolean  // show the image as-is: no blending, framed like a screenshot
 }>(), {
   label: '[ IMAGE ]',
   ratio: '16/9',
   fit: 'contain',
   caption: false,
+  screenshot: false,
 })
 
 const loaded = ref(false)
@@ -27,14 +29,14 @@ const url = computed(() => {
 </script>
 
 <template>
-  <figure class="image-slot">
+  <figure class="image-slot" :class="{ screenshot }">
     <div class="frame" :class="{ empty: !loaded }" :style="{ aspectRatio: ratio }">
       <img
         v-if="url && !failed"
         v-show="loaded"
         :src="url"
         :alt="label"
-        :style="{ objectFit: fit }"
+        :style="{ objectFit: fit, mixBlendMode: screenshot ? 'normal' : 'darken' }"
         @load="loaded = true"
         @error="failed = true"
       >
@@ -56,6 +58,15 @@ const url = computed(() => {
 }
 .frame.empty { border: 3px dotted var(--dot); }
 img { width: 100%; height: 100%; display: block; }
+.screenshot .frame { overflow: visible; }
+.screenshot img {
+  width: auto;
+  height: auto;
+  max-width: calc(100% - 12px);
+  max-height: calc(100% - 12px);
+  border: 2px solid var(--ink);
+  box-shadow: 10px 10px 0 var(--ink);
+}
 .slot-label {
   font-family: var(--f-mono);
   font-size: 20px;

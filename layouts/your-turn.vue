@@ -35,7 +35,7 @@ withDefaults(defineProps<{
       </div>
     </div>
     <aside class="side">
-      <Timer :minutes="minutes" />
+      <img class="yt-icon" src="/images/exercise.svg" alt="Exercise">
       <div v-if="$slots.look" class="look">
         <span class="label">Look for:</span>
         <slot name="look" />
@@ -58,6 +58,7 @@ withDefaults(defineProps<{
 .story { color: var(--grey); font-size: 28px; line-height: 1.3; margin: 0 0 4px; }
 .predict { color: var(--orange); font-style: italic; font-size: 28px; font-weight: 600; margin: 0 0 26px; }
 .side { padding-top: 54px; display: flex; flex-direction: column; align-items: flex-start; gap: 48px; }
+.yt-icon { width: 180px; height: 180px; display: block; }
 .look { font-size: 28px; line-height: 1.45; }
 .look :deep(p) { margin: 0 0 10px; }
 .look :deep(ul) { margin: 0; padding: 0; list-style: none; }

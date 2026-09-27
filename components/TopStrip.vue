@@ -4,10 +4,12 @@ const props = withDefaults(defineProps<{
   active?: number
   menu?: boolean
   menuTo?: string
+  links?: { label: string, to: string }[]   // shortcuts on the right
 }>(), {
   active: -1,
   menu: false,
   menuTo: 'menu',
+  links: () => [],
 })
 </script>
 
@@ -19,7 +21,10 @@ const props = withDefaults(defineProps<{
         <span :class="{ on: i === (props.active < 0 ? props.crumbs.length - 1 : props.active) }">{{ c }}</span>
       </template>
     </div>
-    <Link v-if="props.menu" :to="props.menuTo" class="menu">MENU ↩</Link>
+    <div v-if="props.menu || props.links.length" class="shortcuts">
+      <Link v-for="l in props.links" :key="l.to" :to="l.to" class="menu">{{ l.label }} →</Link>
+      <Link v-if="props.menu" :to="props.menuTo" class="menu">MENU ↩</Link>
+    </div>
   </div>
 </template>
 
@@ -44,6 +49,7 @@ const props = withDefaults(defineProps<{
   z-index: 5;
 }
 .crumbs { white-space: nowrap; }
+.shortcuts { display: flex; gap: 28px; }
 .sep { margin: 0 0.7em; }
 .on { color: var(--orange); }
 .menu, :deep(a) {

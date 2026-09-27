@@ -2,7 +2,7 @@
 defineProps<{
   code: string    // E3
   name: string    // Contradiction
-  part: string    // P4
+  part?: string   // P4 (optional; omitted on the menu)
   to?: string     // route alias, defaults to the lowercase code
 }>()
 </script>
@@ -12,7 +12,7 @@ defineProps<{
     <span class="tile">
       <span class="code">{{ code }}</span>
       <span class="name">{{ name }}</span>
-      <span class="part">{{ part }}</span>
+      <span v-if="part" class="part">{{ part }}</span>
     </span>
   </Link>
 </template>
