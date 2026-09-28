@@ -377,7 +377,7 @@ clicks: 1
       <div class="cs-row"><span class="cs-flaw">Always has an opinion.</span><span v-click="1" class="cs-why mono">because he always produces a next token; silence isn't an option</span></div>
       <div class="cs-row"><span class="cs-flaw">Has never said "I don't know."</span><span v-click="1" class="cs-why mono">because he picks what sounds likely, true or not</span></div>
       <div class="cs-row"><span class="cs-flaw">Agrees with whoever speakes.</span><span v-click="1" class="cs-why mono">because recent, confident text weighs most, and he was trained to please</span></div>
-      <div class="cs-row"><span class="cs-flaw">Remembers nothing you didn't write down.</span><span v-click="1" class="cs-why mono">because he only has the context window</span></div>
+      <div class="cs-row"><span class="cs-flaw">Remembers nothing.</span><span v-click="1" class="cs-why mono">because he only has the context window</span></div>
       <div class="cs-row"><span class="cs-flaw">His news is old.</span><span v-click="1" class="cs-why mono">because his training stops at a cutoff date</span></div>
     </div>
     <p class="cs-bottom o"><em>like Amoo GPT, Amoo Gemini, Amoo Claude and so on .</em></p>
@@ -674,7 +674,7 @@ class: p1close
 <Stripe />
 
 <div class="center-y p1c">
-  <h1 class="m">THE PROMPT IS THE SMALLEST PART OF THE PAGE, <span class="o">AND THE ONE THAT STEERS ALL THE REST.</span></h1>
+  <h1 class="m">THE PROMPT IS THE SMALLEST PART OF THE CONTEXT, <span class="o">AND THE ONE THAT STEERS ALL THE REST.</span></h1>
 </div>
 
 <style>
