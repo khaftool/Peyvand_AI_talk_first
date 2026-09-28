@@ -50,7 +50,7 @@ function row(w: string) {
   height: 64px;
   transition: transform 600ms ease-in-out;
 }
-.word { width: 170px; font-size: 30px; font-weight: 700; text-align: right; }
+.word { width: 250px; font-size: 36px; font-weight: 700; text-align: right; }
 .bar { height: 44px; background: var(--ink); transition: width 600ms ease-in-out, background-color 300ms linear; }
 .pct { font-size: 28px; color: var(--grey); }
 .hi .bar { background: var(--orange); }

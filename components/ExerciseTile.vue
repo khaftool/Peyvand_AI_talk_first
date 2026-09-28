@@ -4,12 +4,13 @@ defineProps<{
   name: string    // Contradiction
   part?: string   // P4 (optional; omitted on the menu)
   to?: string     // route alias, defaults to the lowercase code
+  featured?: boolean  // light orange highlight
 }>()
 </script>
 
 <template>
   <Link :to="to || code.toLowerCase()" class="tile-link">
-    <span class="tile">
+    <span class="tile" :class="{ featured }">
       <span class="code">{{ code }}</span>
       <span class="name">{{ name }}</span>
       <span v-if="part" class="part">{{ part }}</span>
@@ -27,8 +28,9 @@ defineProps<{
   padding: 0 24px;
   border: 2px solid var(--ink);
   background: transparent;
-  transition: border-color 120ms linear;
+  transition: border-color 120ms linear, background-color 400ms ease;
 }
+.tile.featured { background: #FBE9DD; border-color: var(--orange); }
 .tile:hover { border-color: var(--orange); }
 .code {
   font-family: var(--f-mono);
