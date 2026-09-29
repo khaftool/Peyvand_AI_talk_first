@@ -60,10 +60,22 @@ class: recap
 <p class="mono recap-sub">AI for Work, Education &amp; Daily Life</p>
 
 <div class="recap-grid">
+
+  <div class="box">
+    <span class="label">IT ALREADY FITS INTO DAILY LIFE</span>
+    <p>Summarizing articles, writing CVs and emails, preparing presentations, creating posts.</p>
+  </div>
+
   <div class="box">
     <span class="label">AI IS A TOOL, NOT MAGIC</span>
     <p>You ask, the model predicts the most likely answer, and different tools are good at different jobs.</p>
   </div>
+
+  <div class="box">
+    <span class="label">IT CAN BE CONFIDENTLY WRONG</span>
+    <p>So we check what it says, ask again when it misses, and build our own assistants for tasks we repeat.</p>
+  </div>
+
   <div class="box">
     <span class="label">GOLDEN PRINCIPLES</span>
     <ul class="recap-list">
@@ -74,17 +86,9 @@ class: recap
       <li>Keep practicing</li>
     </ul>
   </div>
-  <div class="box">
-    <span class="label">IT ALREADY FITS INTO DAILY LIFE</span>
-    <p>Summarizing articles, writing CVs and emails, preparing presentations, creating posts.</p>
-  </div>
-  <div class="box">
-    <span class="label">IT CAN BE CONFIDENTLY WRONG</span>
-    <p>So we check what it says, ask again when it misses, and build our own assistants for tasks we repeat.</p>
-  </div>
 </div>
 
-<p class="recap-line"><em>Last time was about what to ask. <span class="o">Tonight we are gonna dive deeper .</span></em></p>
+<p class="recap-line"><em>Last time was about AI Tools. <span class="o">Tonight we are gonna dive deeper .</span></em></p>
 
 <style>
 .recap h1 { font-size: 96px; margin-bottom: 16px; }
@@ -95,7 +99,7 @@ class: recap
 .recap-grid .box:nth-child(1) .label { color: var(--orange); }
 .recap-grid .box:nth-child(2) .label { color: #1F7A74; }
 .recap-grid .box:nth-child(3) .label { color: #2F5DA8; }
-.recap-grid .box:nth-child(4) .label { color: #A8324A; }
+.recap-grid .box:nth-child(4) .label { color: #c79408; }
 .recap-grid p { font-size: 32px; line-height: 1.35; margin: 0; }
 .recap-list { list-style: none; margin: 0; padding: 0; }
 .recap-list li { font-size: 30px; line-height: 1.3; padding-left: 28px; position: relative; margin-bottom: 8px; }
@@ -360,7 +364,6 @@ class: defs
 
 ---
 class: meet-amoo
-clicks: 1
 ---
 
 <!-- 11 · MEET AMOO -->
@@ -373,12 +376,12 @@ clicks: 1
     <h1 class="m">AI models are like a Persian Amoo.</h1>
     <div class="box cs">
       <span class="label">AMOO</span>
-      <div class="cs-row"><span class="cs-flaw">Knows it all.</span><span v-click="1" class="cs-why mono">because he learned from a huge slice of the internet</span></div>
-      <div class="cs-row"><span class="cs-flaw">Always has an opinion.</span><span v-click="1" class="cs-why mono">because he always produces a next token; silence isn't an option</span></div>
-      <div class="cs-row"><span class="cs-flaw">Has never said "I don't know."</span><span v-click="1" class="cs-why mono">because he picks what sounds likely, true or not</span></div>
-      <div class="cs-row"><span class="cs-flaw">Agrees with whoever speaks.</span><span v-click="1" class="cs-why mono">because recent, confident text weighs most, and he was trained to please</span></div>
-      <div class="cs-row"><span class="cs-flaw">Remembers nothing.</span><span v-click="1" class="cs-why mono">because he only has the context window</span></div>
-      <div class="cs-row"><span class="cs-flaw">His information is old.</span><span v-click="1" class="cs-why mono">because his training stops at a cutoff date</span></div>
+      <div class="cs-row"><span class="cs-flaw">Knows it all.</span><span class="cs-why mono">because he learned from a huge slice of the internet</span></div>
+      <div class="cs-row"><span class="cs-flaw">Always has an opinion.</span><span class="cs-why mono">because he always produces a next token; silence isn't an option</span></div>
+      <div class="cs-row"><span class="cs-flaw">Has never said "I don't know."</span><span  class="cs-why mono">because he picks what sounds likely, true or not</span></div>
+      <div class="cs-row"><span class="cs-flaw">Agrees with whoever speaks.</span><span class="cs-why mono">because recent, confident text weighs most, and he was trained to please</span></div>
+      <div class="cs-row"><span class="cs-flaw">Remembers nothing.</span><span class="cs-why mono">because he only has the context window</span></div>
+      <div class="cs-row"><span class="cs-flaw">His information is old.</span><span class="cs-why mono">because his training stops at a cutoff date</span></div>
     </div>
     <p class="cs-bottom o"><em>like Amoo GPT, Amoo Gemini, Amoo Claude and so on .</em></p>
   </div>
